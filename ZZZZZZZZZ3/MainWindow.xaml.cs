@@ -27,7 +27,8 @@ namespace ZZZZZZZZZ3
         private void Button_Click(object sender, RoutedEventArgs e)
 
 
-
+             if (!double.TryParse(textbox1.Text, out double a))
+            { MessageBox.Show("Поле только для чисел"); }
 
 
 

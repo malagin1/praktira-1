@@ -1,0 +1,45 @@
+﻿<Window x:Class="zzz4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zzz4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Введите число C:" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="258,21,44,23"/>
+        <TextBox Grid.Column="1" Name="NumberC" />
+        <TextBlock Text="Введите число X:" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="252,22,50,22"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Name="NumberX" />
+        <TextBlock Text="Введите число A:" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="251,21,51,22"/>
+        <TextBox Grid.Column="1" Grid.Row="2" Name="NumberA" />
+        <TextBlock Text="Введите число W:" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="254,21,44,23"/>
+        <TextBox Grid.Column="1" Grid.Row="3" Name="NumberW" />
+        <TextBlock Text="Введите число T:" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" Height="28" Margin="253,22,51,10" Width="92" RenderTransformOrigin="0.716,0.319"/>
+        <TextBox Grid.Column="1" Grid.Row="4" Name="NumberT" />
+        <Button Grid.Row="5"  Content="Вычислить" Click="Button_Click" Grid.ColumnSpan="2" RenderTransformOrigin="0.534,0.674" />
+        <TextBox Name="Resul" Grid.Row="6" IsReadOnly="True" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,1">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="4.598"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="2.413"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+    </Grid>
+</Window>
