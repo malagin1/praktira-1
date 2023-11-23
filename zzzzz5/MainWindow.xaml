@@ -1,0 +1,42 @@
+﻿<Window x:Class="zzzzz5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zzzzz5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" MinHeight="43"/>
+            <RowDefinition Height="Auto" MinHeight="4"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Число А1"/>
+        <TextBox Name="TbNumberA1" Grid.Column="1"/>
+        <TextBlock Text="Число B1" Grid.Row="1"/>
+        <TextBox Name="TbNumberB1" Grid.Column="1" Grid.Row="1"/>
+        <TextBlock Text="Число C1" Grid.Row="2"/>
+        <TextBox Name="TbNumberC1" Grid.Column="1" Grid.Row="2"/>
+        <TextBlock Text="Число А2" Grid.Row="3" Margin="0,0,0,35" Grid.RowSpan="4"/>
+        <TextBox Name="TbNumberA2" Grid.Column="1" Grid.Row="3" Margin="0,0,0,41" Grid.RowSpan="4"/>
+        <TextBlock Text="Число B2" Grid.Row="6" Margin="0,9,0,0"/>
+        <TextBox Name="TbNumberB2" Grid.Column="1" Grid.Row="6" Margin="0,8,-5,0"/>
+        <TextBlock Text="Число C2" Grid.Row="7" Margin="0,0,0,-27"/>
+        <TextBox Name="TbNumberC2" Grid.Column="1" Grid.Row="7" Margin="0,0,0,-27"/>
+        <StackPanel Grid.Row="7" Grid.ColumnSpan="2" Margin="0,66,0,-105">
+            <TextBlock Text="Результаты"/>
+        </StackPanel>
+        <Button Name="CompliteButton" Grid.Row="7" Grid.ColumnSpan="2" Content="Выполнить" Click="Button_Click" Margin="0,188,0,-287"/>
+        <TextBox x:Name="TextAnswer" IsReadOnly="True" VerticalScrollBarVisibility="Visible" Grid.ColumnSpan="2" Margin="0,110,0,-187" Grid.Row="7"/>
+    </Grid>
+</Window>
